@@ -339,10 +339,9 @@
         </form>
         <script>
           window.addEventListener('load', function () {
-            if (sessionStorage.getItem('scrollPosition') === 'scrolled') {
-              window.scrollTo(0, window.scrollY + (document.body.scrollHeight * 0.1));
-              sessionStorage.removeItem('scrollPosition'); // Clear the flag after scrolling
-            }
+            window.scrollTo(0, window.scrollY + (document.body.scrollHeight * 0.1));
+            sessionStorage.removeItem('scrollPosition'); // Clear the flag after scrolling
+
           });
 
 
